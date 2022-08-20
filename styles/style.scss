@@ -1,0 +1,146 @@
+@import './reset';
+@import './variables';
+
+.main-cont {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-left {
+    width: 55%;
+    height: 100%;
+    padding: 0 20px;
+    background-color: $body-bg-color;
+    
+    .header-left img{
+        width: 60%;
+        margin: 40px 0 70px;
+    }
+
+    .cont-left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        h2 {
+            color: $title-color;
+            font-weight: 700;
+            font-size: 2.3em;
+
+        }
+
+        h3 {
+            color: $text-color;
+            font-weight: 500;
+            font-size: 1.70em;
+        }
+
+        p {
+            color: $text-color;
+            font-weight: 300;
+            font-size: 1.5em;
+            line-height: 28px;
+            
+        }
+
+        form {
+            .form-email {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0;
+
+                label {
+                    color: $form-color;
+                    font-size: 1.35em;
+                }
+
+                .input-send {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-top: 10px;
+
+                    .input-email {
+                        font-size: 1.6em;
+                        padding: 14px;
+                        border:  none;
+                        outline: none;
+                        width: 80%;
+                    }
+    
+                    button {
+                        background-color: $bg-button-color;
+                        cursor: pointer;
+                        width: 58px;
+                        height: 56px;
+                        transition: 0.4s;
+    
+                        &:hover {
+                            transform: scale(1.1);
+                            outline: none;
+                            box-shadow: 3px 0px 10px #5238896b;
+                        }
+                    }
+                }
+     
+            }
+
+
+        }
+
+        a {
+            font-size: 1.5em;
+            color: $link-color;
+            cursor: pointer;
+            transition: 0.4s;
+            width: max-content;
+
+            &:hover {
+                text-decoration: underline;
+                transform: scale(1.06);
+                color: $title-color;
+            }
+        }
+    }
+}
+
+.main-right {
+    width: 45%;
+
+    background-image: url('../images/rn\ 2.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    filter: opacity(0.85);
+}
+
+
+@media only screen and (max-width: 500px) {
+    
+    .main-right {
+        visibility: hidden;
+        width: 0vw;
+    }
+
+    .main-left {
+        width: 100vw;
+
+        .header-left img{
+            width: 70%;
+            margin: 40px 0 35px;
+        }
+
+        .cont-left {
+            width: 100%;
+            transform: scale(0.92);
+        }
+
+        .form-email .input-send {
+            font-size: 0.9em;
+        }
+    }
+
+
+
+}
+
