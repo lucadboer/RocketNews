@@ -68,7 +68,7 @@
                         width: 80%;
                     }
     
-                    button {
+                    .btn-send {
                         background-color: $bg-button-color;
                         cursor: pointer;
                         width: 58px;
@@ -124,6 +124,7 @@
 
     .main-left {
         width: 100vw;
+        height: 100vh;
 
         .header-left img{
             width: 70%;
@@ -138,6 +139,7 @@
         .form-email .input-send {
             font-size: 0.9em;
         }
+
     }
 
 

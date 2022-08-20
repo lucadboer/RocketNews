@@ -66,14 +66,14 @@
   outline: none;
   width: 80%;
 }
-.main-left .cont-left form .form-email .input-send button {
+.main-left .cont-left form .form-email .input-send .btn-send {
   background-color: #8257e5;
   cursor: pointer;
   width: 58px;
   height: 56px;
   transition: 0.4s;
 }
-.main-left .cont-left form .form-email .input-send button:hover {
+.main-left .cont-left form .form-email .input-send .btn-send:hover {
   transform: scale(1.1);
   outline: none;
   box-shadow: 3px 0px 10px rgba(82, 56, 137, 0.4196078431);
@@ -109,6 +109,7 @@
   }
   .main-left {
     width: 100vw;
+    height: 100vh;
   }
   .main-left .header-left img {
     width: 70%;
